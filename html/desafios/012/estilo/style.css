@@ -24,6 +24,7 @@ header{
     text-align: center;
 }
 header>h1{
+    min-width: 2em;
     font-size: 5vh;
     font-family: var(--font2);
     padding-top: 50px;
@@ -41,6 +42,7 @@ header a:hover, footer a:hover{
     text-decoration:underline;
 }
 section{
+    text-align: justify;
     font-size: 3vh;
     font-family: var(--font3);
     padding-top: 10vh;
@@ -48,13 +50,24 @@ section{
     line-height: 2em;
     padding-left: 30px;
 }
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position:right center;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position:right center;
+}
 
 section.image{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.509);
+    background-size: cover;
     background-color:rgba(32, 32, 32, 0.74);
     color: white;
+    background-attachment: fixed;
 }
 section.image>p{
-    background-color: rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.066);
     display: inline-block;
     text-align: center;
 }
