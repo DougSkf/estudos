@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELA 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead,tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <H1>uso de tabelas grandes</H1>
+    <!--
+      ANATOMIA PARA TABELAS GRANDES
+      TABLE:
+        caption=legenda inicial
+         THEAD
+            TR,TD,TH
+         TBODY
+            TR,TD,TH
+         TFOOT
+            TR,TD,TH
+     -->
+
+
+
+     <table>
+        <thead>
+           <tr>
+            <th scope="col">estado</th>
+            <th scope="col">população</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <t>são paulo</td>
+                <td class="num" scope>45.919.049</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>rio de janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.664</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">habitantes</th>
+            <td class="num">0000</td>
+        </tfoot>
+     </table>
+    
+</body>
+</html>
