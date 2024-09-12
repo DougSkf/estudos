@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulario</title>
+</head>
+<body>
+    <h1>teste de formularios</h1>
+    <form action="cadastro.php" method="post"> <!-- metodo post, pois trabalharei com dados sensiveis -->
+        <p><label for="iusu">usuario:</label>
+        <input type="text" id="iusu" name="nome" placeholder="seu nome"></p> <!-- placeholder=uma legenda/dica para oq vai no formulario -->
+
+        <p><label for="isen">senha: </label>
+        <input type="password" name="senha" id="isen"  minlength="8"></p> <!-- atributo "required" pois a senha sera obrigatoria para envio do formulario, minlength é a exigencia minima de caracteres-->
+
+        <p><input type="submit" value="enviar"> <!-- submit=envio -->
+        <input type="reset" value="limpar"></p> <!-- reset=limpar -->
+    </form>
+</body>
+</html>
