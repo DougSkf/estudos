@@ -23,14 +23,13 @@ header{
     align-items: center;
 }
 header > h1{
-  border: 1px dotted black ;
   flex: 0 0 200px
 }
 header>nav{
-    border: 1px dotted black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    flex: 0 0 auto;
 }
 header>nav>a{
 background-color: black;
@@ -54,3 +53,4 @@ main{
     border-radius: 10px;
     box-shadow: 2px 2px 3px black;
 }
+
