@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: black ;
+            color: white;
+            font: normal 10pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg">clique em mim</div>
+
+
+
+
+    <script>
+     //arvore dom me permite consultar ou manipular dados presentes no meu site
+     let corpo=window.document.body
+      let p1 = window.document.getElementsByTagName('p')[0]//seleção por tag, e posteriormente as colchetes indicando qual da sequencia quero consultar
+      let d1=window.document.querySelector('div.smg')
+
+      
+      window.document.write(p1.innerText)
+      p1.style.color='blue'
+      corpo.style.backgroundColor='green'
+      window.document.write(d1.innerHTML)
+      
+
+    </script>
+    
+</body>
+</html>
